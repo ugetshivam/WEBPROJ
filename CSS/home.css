@@ -1,0 +1,55 @@
+.first_tab{
+    height: 31vh;
+    width: 100%;
+    background-image: url(/images/The_Beatles.png);
+    /* position: relative; */
+}
+
+.second_tab{
+    height: 31vh;
+    width: 100%;
+    background-image: url(/images/Acdc.jpg);
+
+}
+
+.third_tab{
+    height: 31vh;
+    width: 100%;
+    background-image: url(/images/rhcp.jpg);
+}
+.back{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/images/background.JPG);
+    position: relative;
+}
+.info{
+    
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+    opacity: 0.8;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info h3{
+    font-size: 30px;
+    font-family: 'Caveat', cursive; 
+    color: black;
+}
+.info ul li{
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+}
+.info ul{
+    list-style-type: none;
+}
+.info ul a{
+    text-decoration: none;
+}
+.info ul a:hover{
+    color: rgb(255, 0, 0);
+    
+} 

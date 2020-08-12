@@ -1,0 +1,36 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+form{
+        margin-top: 25vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    
+    
+}
+fieldset{
+    background-color: #CBC5C4;
+}
+.inputs{
+   
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: fit-content;
+    
+}
+label{
+    display: inline-block;
+    width: 20vw;
+}
+#sub{
+        margin-left: 120px;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(81, 196, 142, 0.849);
+}
