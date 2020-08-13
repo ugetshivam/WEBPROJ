@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="CSS/Login.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,26 +29,27 @@
     </nav>
     <script src="JS/app.js"></script>
     <form>
-        <fieldset>
 
-            <div class="inputs">
-                <!-- <label for="first_name">*First Name: </label>
-                <input type="text" id="first_name" name="firstName" pattern="[A-Za-z]*" required><br><br>
-                <label for="middle_name">Middle Name: </label>
-                <input type="text" id="middle_name" name="middleName" pattern="[A-Za-z]*"><br><br>
-                <label for="last_name">*Last Name: </label>
-                <input type="text" id="last_name" name="lasttName" pattern="[A-Za-z]*" required><br><br> -->
-                <label for="email">*Email: </label>
-                <input type="email" id="email" name="Email" required><br><br>
-                <label for="pass">Password: </label>
-                <input type="password" id="pass" name="pass" required><br><br>
-                <input type="submit" value="Login" id="sub">
-                <!-- <label for="birth">*Date of birth: </label>
-                <input type="date" id="birth" name="birthdate" required><br><br> -->
-            </div>
-        </fieldset>
+
+        <div class="inputs">
+
+            <label for="email">
+                <h3>*Email: </h3>
+            </label>
+            <input type="email" id="email" name="Email" required><br><br>
+            <label for="pass">
+                <h3>Password: </h3>
+            </label>
+            <input type="password" id="pass" name="pass" required><br><br>
+            <button type="submit" value="Login" onclick="myFunction()">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
         <h4>Don't have an account? <a href="Signup.html"> Create an account.</a></h4>
     </form>
+    <script src="/JS/Login.js"></script>
 </body>
 
 </html>
