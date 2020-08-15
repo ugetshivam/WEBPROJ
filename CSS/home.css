@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    background-color: #ffffff ;
+    
 
 }
 .divs div{
@@ -14,27 +14,20 @@
     width: 330px;
     height: 380px;
     border-radius: 15px 15px 15px 15px;
-    background-color:#b8b8b8 ;
+    background: linear-gradient(to right,#abbaab, #ffffff);
     margin: 100px 60px 50px 60px;
 }
-.divs .tab1{
-    background-image: url(/images/radiohead.jpg);
-}
-.divs .tab2{
-    background-image: url(/images/johnDenver.jpg);
-}
-.divs .tab3{
-    background-image: url(/images/giorno.jpg);
+    
 }
 .divs div h1{
     margin-top: 25%;
     font-family: 'Caveat', cursive;
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 .divs div section{
     margin-top: 10%;
     font-family: 'Caveat', cursive;
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
 
 }
 .divs div button{
@@ -98,8 +91,133 @@
 .back{
     height: 100%;
     width: 100%;
-    background-image: url(/images/background-image.JPG);
+    
 }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #70e1f5, #ffd194);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7vh;
+    font-family: 'Caveat', cursive;
+    background: linear-gradient(to right, #1f1c2c, #928dab); 
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0px 0px 3px 5px;
+    padding-left: 15%;
+    padding-right: 3%;
+    
+}
+.logo {
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+
+}
+.nav-links a{
+    color:rgb(230, 217, 217);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:rgb(58, 57, 57);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:800px){
+    .nav-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links {
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 7vh;
+       background: linear-gradient(to right, #1f1c2c, #928dab); 
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+   .nav-links li{
+       opacity: 0;
+   }
+  
+   .burger{
+       display: block;
+   }
+}
+
+.nav-active{
+    transform:  translateX(
+        0%
+    );
+    z-index: 1;
+}
+
+@keyframes navlinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
 /*
 .info{
     
