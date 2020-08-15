@@ -1,0 +1,55 @@
+table{
+  border-collapse: collapse;
+  width:70%;
+  font-family: 'Caveat', "cursive";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+table tr{
+    border-bottom: 2px solid rgb(165, 196, 115);
+    letter-spacing: 2px;
+    
+}
+table tr th{
+    padding:12px;
+    font-size: 30px;
+}
+table tr td{
+    padding: 12px;
+}
+table tr label{
+    font-size: 20px;
+}
+table tr input{
+    width: 30%;
+    height: 27px;
+    border: 1px solid black;
+    box-shadow: 0 3px 20px #265c92;
+    margin-left: 10px;
+}
+table tr select{
+    width: 22%;
+    height: 27px;
+    border: 1px solid black;
+    box-shadow: 0 3px 20px #265c92;
+    margin-left: 5px;
+}
+table .buttonRow {
+    border-bottom: 0px;
+}
+table .buttonRow button{
+   
+    height: 30px;
+    width: 190px;
+    font-family: "Caveat", "cursive";
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+table .buttonRow button:hover{
+    background-color: white;
+    color: rgb(16, 146, 221);
+}

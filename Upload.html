@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload </title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/upload.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 <nav>
     <div class="logo">
@@ -24,6 +26,91 @@
     </div>
 </nav>
 <script src="JS/app.js"></script>
+<table>
+    <tr>
+        <th>INFORMATION REQUIRED</th>
+    </tr>
+    <tr>
+        <td>
+            <label for="artist">Artist</label>
+            <input type="text" id="artist" name="artist" required>
+            <label for="song">Song Name</label>
+            <input type="text" id="song" name="song" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="tc">Type</label>
+            <select id="tc">
+                <option value="Tab">Tab</option>
+                <option value="Chord">Chord</option>
+            </select>
+            <label for="genre">Genre</label>
+            <select id="genre">
+                <option value="Country">Country</option>
+                <option value="Blues">Blues</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Rock and roll">Rock and Roll</option>
+                <option value="Metal">Metal</option>
+                <option value="Pop">Pop</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="tuning">Tuning</label>
+            <select id="tuning">
+                <option disabled selected>select</option>
+                <option value="Standard">Standard</option>
+                <option value="halfstepd">Half-step down</option>
+                <option value="openA">Open A</option>
+                <option value="openB">Open B</option>
+                <option value=dadgad>DADGAD</option>
+                <option value="c#">C# tuning</option>
+            </select>
+            <label for="capo">Capo</label>
+            <select id="capo">
+                <option disabled selected>select</option>
+                <option value="0">No Capo</option>
+                <option value="1">1st fret</option>
+                <option value="2">2nd fret</option>
+                <option value="3">3rd fret</option>
+                <option value="4">4th fret</option>
+                <option value="5">5th fret</option>
+                <option value="6">6th fret</option>
+                <option value="7">7th fret</option>
+                <option value="9">8th fret</option>
+                <option value="9">9th fret</option>
+                <option value="10">10th fret</option>
+                <option value="11">11th fret</option>
+                <option value="12">12th fret</option>
+            </select>
+            <label for="key">Key</label>
+            <select id="capo">
+                <option disabled selected>select</option>
+                <option value="C">C</option>
+                <option value="G">G</option>
+                <option value="D">D</option>
+                <option value="A">A</option>
+                <option value="E">E</option>
+                <option value="Em">Em</option>
+                <option value="F">F</option>
+                <option value="Am">Am</option>
+                <option value="Dm">Dm</option>
+                <option value="C#m">C#m</option>
+                <option value="Abm">Abm</option>
+                <option value="Cm">Cm</option>
+                <option value="F#m">F#m</option>
+            </select>
+        </td>
+    </tr>
+    <tr class="buttonRow">
+        <td>
+            <input type="file">
+            <button type="button">Upload your tabs</button>
+        </td>
+    </tr>
+</table>
 
 <body>
 
