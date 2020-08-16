@@ -1,0 +1,48 @@
+form{
+    position: absolute;
+    width: 50vw;
+    height: 35vh;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 0.8;
+    
+}
+
+.inputs {
+     background-color: whitesmoke;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+}
+.inputs input[type=text], input[type=password], input[type=email]{
+    width: 50%;
+    height: 30px;
+    margin: 8px 12vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.inputs h2{
+    font-family: "Caveat", "cursive";
+}
+.inputs h4{
+    color: rgb(63, 61, 61);
+    
+}
+button {
+  background-color: rgb(0, 183, 255);
+  border-radius: 5px;
+  color: white;
+  /* padding: 14px 20px; */
+  margin: 8px 12vw;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  height: 30px;
+  font-family: "caveat", cursive;
+  font-size:20px;
+}
+h4 a{
+    color:rgb(0, 183, 255);
+}
