@@ -3,7 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
 } */
-form {border: 3px solid #f1f1f1;}
+
+    
+
+/* form {border: 3px solid #f1f1f1;} */
 form{
     position: absolute;
     width: 50vw;
@@ -11,26 +14,40 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(218, 148, 148);
+    
     opacity: 0.8;
     
 }
-.inputs input[type=email], input[type=password]{
+.inputs{
+    background-color: whitesmoke;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+}
+h2{
+    font-family: "Caveat", cursive;
+}
+h4{
+    color: rgb(63, 61, 61);
+}
+.inputs input[type=text], input[type=password]{
     width: 50%;
     height: 30px;
-    margin: 8px;
-    display: inline-block;
+    margin: 8px 12vw;
     border: 1px solid #ccc;
 }
 button {
-  background-color: #4CAF50;
+  background-color: rgb(0, 183, 255);
+  border-radius: 5px;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  /* padding: 14px 20px; */
+  margin: 8px 12vw;
   border: none;
   cursor: pointer;
-  width: 25%;
+  width: 50%;
+  height: 30px;
   font-family: "caveat", cursive;
+  font-size:20px;
 }
 button:hover{
     font-size: 25px;
@@ -39,6 +56,13 @@ button:hover{
 .inputs label{
     display: inline-block;
     width:45%;
+}
+.inputs a{
+    font-size: 16px;
+}
+.inputs a:hover{
+    cursor: pointer;
+    color: rgb(168, 126, 126);
 }
 a{
     text-decoration: none;

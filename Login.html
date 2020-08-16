@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="CSS/Login.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style=" background: linear-gradient(to right, #70e1f5, #ffd194)">
     <nav>
         <div class="logo">
             <h4>TABS</h4>
@@ -32,22 +32,16 @@
 
 
         <div class="inputs">
-
-            <label for="email">
-                <h3>*Email: </h3>
-            </label>
-            <input type="email" id="email" name="Email" required><br><br>
-            <label for="pass">
-                <h3>Password: </h3>
-            </label>
-            <input type="password" id="pass" name="pass" required><br><br>
-            <button type="submit" value="Login" onclick="myFunction()">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+            <h2>TABS</h2>
+            <input type="text" id="user" name="username" placeholder="Username" required><br>
+            <input type="password" id="pass" name="pass" placeholder="Password" required>
+            <button type="submit">Log in</button><br><br>
+            <h4>OR</h4><br>
+            <a><img src="/images/google.png" height="20px">&nbsp; Log in with Google</a>
         </div>
 
-        <h4>Don't have an account? <a href="Signup.html"> Create an account.</a></h4>
+
+        <h4>Don't have an account? <a id="signup" href="Signup.html"> Create an account.</a></h4>
     </form>
     <script src="/JS/Login.js"></script>
 </body>
