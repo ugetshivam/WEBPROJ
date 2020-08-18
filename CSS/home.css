@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 330px;
-    height: 380px;
+    width: 480px;
+    height: 270px;
     border-radius: 15px 15px 15px 15px;
     margin: 100px 60px 50px 60px;
 }
@@ -23,17 +23,25 @@ background-image: url(/images/johnDenver.jpg);
 .divs .tab3{
 background-image: url(/images/giorno.jpg);
 }
-
+.divs .tab4{
+background-image: url(/images/TheBeatles.jpg);
+}
+.divs .tab5{
+background-image: url(/images/Rhcp.jpg);
+}
+.divs .tab6{
+background-image: url(/images/Acdc.jpg);
+}
 .divs div h1{
-    /* margin-top: 25%; */
+    margin-top: -10%;
     font-family: 'Caveat', cursive;
-    color: rgb(255, 255, 255);
+    color: rgb(103, 79, 170);
     /* background-color: #0a7e8de3; */
  
    
 }
 .divs div button{
-    margin-top: 85%;
+    margin-top: 45%;
     font-family: 'Caveat', cursive;
 }
 
@@ -221,4 +229,25 @@ a {
     text-decoration: none;
     color: black;
 }
+footer div{
+    background: linear-gradient(to right, #1f1c2c, #928dab); 
+    height: 6vh;
+    
+}
+footer div ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+   
+}
+footer div ul .fa{
+   color: white;
+   font-size: 30px;
+   margin: 6px;
+}
 
+.fa:hover {
+    opacity: 0.7;
+}

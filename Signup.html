@@ -18,7 +18,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
+            <li><a href="Help.html">Help</a></li>
             <li><a href="Upload.html">Upload</a></li>
             <li><a href="Login.html">Login</a></li>
         </ul>
@@ -29,22 +29,26 @@
         </div>
     </nav>
     <script src="JS/app.js"></script>
-    <form>
+    <form action="Login.html">
 
         <div class="inputs">
             <h2>TABS</h2><br>
             <h4>Sign up to see tabs from all genres</h4>
-            <button type="button"><a><img src="/images/google.png" height="20px">&nbsp; Sign up with
+            <button type="button"><a href="https://www.gmail.com"><img src="/images/google.png" height="20px">&nbsp;
+                    Sign up with
                     Google</a></button>
             <h4>OR</h4>
-            <input type="text" id="name" name="Name" placeholder="Full Name" pattern="[A-Za-z]*" required><br><br>
+            <input type="text" id="name" name="Name" placeholder="Full Name" pattern="[A-Za-z\s]*" required><br><br>
             <input type="email" id="email" name="Email" placeholder="Email" required><br><br>
             <input type="text" id="username" name="username" placeholder="Username" required><br><br>
-            <input type="password" id="pass" name="pass" placeholder="Password" required><br>
+            <input type="password" id="pass" name="pass"
+                placeholder="Password(at least one numeric and one special character)" onblur="myFunction()"
+                required><label for="pass" id="PASS_WORD"></label><br>
             <button type="submit">Sign up</button><br><br>
         </div>
         <h4>Have an account? <a id="signup" href="Login.html">Log in</a></h4>
     </form>
+    <script src="/JS/Signup.js"></script>
 </body>
 
 </html>
